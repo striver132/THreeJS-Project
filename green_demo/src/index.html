@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="test.js"></script>
+  </head>
+  <body>
+    <div class="bg" data-tilt>
+      <div class="role"></div>
+      <canvas class="webgl"></canvas>
+        <span class="green">1<p class="text1">掌天瓶</p></span>
+        <span class="sword">2<p class="text2">青竹风云剑</p></span>
+        
+      <div class="container">
+        <div><img src="/name1.png" alt="" /></div>
+        <p>
+          在小说《凡人修仙传》中，韩立出身于修仙世界一个普通人族家庭，资质平平,他长相平凡，肤色黝黑，行事低调，善随机应变
+        </p>
+      </div>
+    </div>
+
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".bg"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    </script>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
